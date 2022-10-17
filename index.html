@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Audio Samples from "Any-speaker Adaptive Text-To-Speech Synthesis With Diffusion Models"</title>
+    <style>
+      div {
+        margin-bottom: 64px;
+      }
+      .first-col {
+        padding-right: 40px;
+        white-space: nowrap;
+      }
+      .text {
+        padding-right: 40px;
+        font-style: italic;
+        color: #666666;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <header>
+        <h1>Audio Samples from "Any-speaker Adaptive Text-To-Speech Synthesis With Diffusion Models"</h1>
+      </header>
+    </article>
+    <h3 id="toc_title">Contents</h3>
+    <div id="toc_container">
+    <ul>
+      <li><a href="#msvctk">Zero-shot Adaptation (VCTK Dataset)</a></li>
+      <li><a href="#mslibri">Zero-shot Adaptation  (LibriTTS Dataset)</a></li>
+      <li><a href="#vctk">Few-shot Adaptation  (VCTK Dataset)</a></li>
+      <li><a href="#esd">Few-shot Adaptation  (ESD Dataset, only for Demo)</a></li>
+    </ul>
+    </div>
+    <div>
+      <a name="msvctk"><h2>Zero-shot Adaptation (VCTK Dataset)</h2></a>
+      <hr>
+      <table id="vctk">
+        <tbody>
+        <tr id="text">
+          <td>
+            <h4>Text</h4>
+          </td>
+        </tr>
+        <tr id="gt">
+          <td class="first-col">Ground Truth</td>
+        </tr>
+        <tr id="reference">
+          <td class="first-col">Reference</td>
+        </tr>
+        <tr id="stylespeech">
+          <td class="first-col">Meta-Stylespeech</td>
+        </tr>
+        <tr id="gradtts">
+          <td class="first-col">Grad-TTS</td>
+        </tr>
+        <tr id="yourtts">
+          <td class="first-col">YourTTS</td>
+        </tr>
+        <tr id="ours">
+          <td class="first-col">Ours</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <a name="mslibri"><h2>Zero-shot Adaptation (LibriTTS Dataset)</h2></a>
+      <hr>
+      <table id="libritts">
+        <tbody>
+        <tr id="text">
+          <td>
+            <h4>Text</h4>
+          </td>
+        </tr>
+        <tr id="gt">
+          <td class="first-col">Ground Truth</td>
+        </tr>
+        <tr id="reference">
+          <td class="first-col">Reference</td>
+        </tr>
+        <tr id="stylespeech">
+          <td class="first-col">Meta-stylespeech</td>
+        </tr>
+        <tr id="gradtts">
+          <td class="first-col">Grad-TTS</td>
+        </tr>
+        <tr id="yourtts">
+          <td class="first-col">YourTTS</td>
+        </tr>
+        <tr id="ours">
+          <td class="first-col">Ours</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <a name="vctk"><h2>Few-shot Adaptation (VCTK Dataset)</h2></a>
+      <hr>
+      <table id="vctk_fewshot">
+        <tbody>
+        <tr id="text">
+          <td>
+            <h4>Text</h4>
+          </td>
+          <td class="text">
+            He thought he detected a pleasant smell of herbs, like the potpourri his mother had in bowls in their house.
+          </td>
+          <td class="text">
+            Whether much or little consideration had been directed to the result, Miss Chancellor certainly would not have incurred this reproach.
+          </td>
+          <td class="text">
+            These gentlemen, now, what do they come for ? he said, pointing to the malignant gentleman, who was talking at the high table.
+          </td>
+          <td class="text">
+            He well knew the perils of the frontier, the savage state of society, the lurking Indians and the dangers of fever.
+          </td>
+          <td class="text">
+            Only, even though love has wholly disappeared, she still claims consideration, and Althea did not wish to lose Hermon's regard.
+          </td>
+        </tr>
+        <tr id="reference">
+          <td class="first-col">Reference</td>
+          <td><audio controls="" preload="none"><source src="wavs/wavs_ours/vctk_fewshot/p234_reference.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/wavs_ours/vctk_fewshot/p347_reference.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/wavs_ours/vctk_fewshot/p245_reference.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/wavs_ours/vctk_fewshot/p326_reference.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/wavs_ours/vctk_fewshot/p294_reference.wav"></audio></td>
+        </tr>
+        <tr id="adaspeech">
+          <td class="first-col">AdaSpeech</td>
+          <td><audio controls="" preload="none"><source src="wavs/wavs_adaspeech/vctk_fewshot/p234.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/wavs_adaspeech/vctk_fewshot/p347.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/wavs_adaspeech/vctk_fewshot/p245.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/wavs_adaspeech/vctk_fewshot/p326.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/wavs_adaspeech/vctk_fewshot/p294.wav"></audio></td>
+        </tr>
+        <tr id="ours">
+          <td class="first-col">Ours</td>
+          <td><audio controls="" preload="none"><source src="wavs/wavs_ours/vctk_fewshot/p234.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/wavs_ours/vctk_fewshot/p347.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/wavs_ours/vctk_fewshot/p245.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/wavs_ours/vctk_fewshot/p326.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/wavs_ours/vctk_fewshot/p294.wav"></audio></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <a name="esd"><h2>Few-shot Adaptation (ESD Dataset, only for demo)</h2></a>
+      <hr>
+      <h4>Grad-StyleSpeech ables to adapt to emotional speech only with 20 samples and 100 fine-tuning steps.</h4>
+      <table id="esd_man">
+        <tbody>
+        <tr id="text">
+          <td>
+            <h4>Text</h4>
+          </td>
+          <td class="text">
+            If you thought I lived in New York, why in the world didn't you come and see me? the lady inquired.
+          </td>
+          <td class="text">
+            I knew you could not choose but like her; but yet, let me tell you, you have seen but the worst of her.
+          </td>
+          <td class="text">
+            However loudly outward circumstances might oppose this, he now felt, with a certainty which surprised him, that this work was not his own.
+          </td>
+          <td class="text">
+            Montrose also, after having experienced still more variety of good and bad fortune, threw down his arms, and retired out of the kingdom.
+          </td>
+          <td class="text">
+            The marquis of Worcester, a man past eighty four, was the last in England that submitted to the authority of the parliament.
+          </td>
+        </tr>
+        <tr id="reference">
+          <td class="first-col">Reference</td>
+          <td><audio controls="" preload="none"><source src="wavs/wavs_ours/esd/0011_Angry_reference.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/wavs_ours/esd/0011_Happy_reference.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/wavs_ours/esd/0011_Neutral_reference.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/wavs_ours/esd/0011_Sad_reference.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/wavs_ours/esd/0011_Surprise_reference.wav"></audio></td>
+        </tr>
+        <tr id="ours">
+          <td class="first-col">Ours</td>
+          <td><audio controls="" preload="none"><source src="wavs/wavs_ours/esd/0011_Angry.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/wavs_ours/esd/0011_Happy.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/wavs_ours/esd/0011_Neutral.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/wavs_ours/esd/0011_Sad.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/wavs_ours/esd/0011_Surprise.wav"></audio></td>
+        </tr>
+        </tbody>
+      </table>
+      <table id="esd_woman">
+        <tbody>
+        <tr id="text">
+          <td>
+            <h4>Text</h4>
+          </td>
+          <td class="text">
+            I do not know how, but you must keep the matter in mind and perhaps the chance will come to you, she replied.
+          </td>
+          <td class="text">
+            Poor Rachel ! her nature recoiled from deceit, and she told, at all events, as much of the truth as she dared.
+          </td>
+          <td class="text">
+            My father has lost his too, and my eldest brother, but we all look like people risen from the dead.
+          </td>
+          <td class="text">
+            The frightened soldiers hurried away to find Tiggle, and Trot was well pleased because she knew Tiggle was by this time safely hidden.
+          </td>
+          <td class="text">
+            After all, the Mormon people regard the advent of the Buchanan army as one of the greatest material blessings ever brought to them.
+          </td>
+        </tr>
+        <tr id="reference">
+          <td class="first-col">Reference</td>
+          <td><audio controls="" preload="none"><source src="wavs/wavs_ours/esd/0016_Angry_reference.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/wavs_ours/esd/0016_Happy_reference.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/wavs_ours/esd/0016_Neutral_reference.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/wavs_ours/esd/0016_Sad_reference.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/wavs_ours/esd/0016_Surprise_reference.wav"></audio></td>
+        </tr>
+        <tr id="ours">
+          <td class="first-col">Ours</td>
+          <td><audio controls="" preload="none"><source src="wavs/wavs_ours/esd/0016_Angry.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/wavs_ours/esd/0016_Happy.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/wavs_ours/esd/0016_Neutral.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/wavs_ours/esd/0016_Sad.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/wavs_ours/esd/0016_Surprise.wav"></audio></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      Demo page template reference: https://jaywalnut310.github.io/vits-demo/index.html
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>
